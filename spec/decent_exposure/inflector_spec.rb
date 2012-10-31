@@ -51,6 +51,7 @@ describe DecentExposure::Inflector do
     let(:inflector) { DecentExposure::Inflector.new(name) }
 
     context "with a namespaced name" do
+      # why this happen?
       let(:name) { "Content::Page" }
       it "returns a demodulized parameterized string" do
         inflector.singular.should == "page"
